@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Customers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Request;
@@ -15,9 +16,9 @@ class ContactsController extends Controller
     {
         return Inertia::render('Contacts/Index', [
             'filters' => Request::all('search', 'trashed'),
-            'contacts' => Auth::user()->account->contacts()
-                ->with('organization')
-                ->orderByName()
+            'contacts' => Customers::
+//                with('organization')
+                orderByName()
                 ->filter(Request::only('search', 'trashed'))
                 ->paginate(10)
                 ->withQueryString()

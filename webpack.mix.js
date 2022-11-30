@@ -17,6 +17,7 @@ const webpackConfig = require('./webpack.config')
 
 mix
   .js('resources/js/app.js', 'public/js')
+    .scripts(['node_modules/tw-elements/dist/js/index.min.js'], 'public/js/tw.js')
   .vue({ runtimeOnly: (process.env.NODE_ENV || 'production') === 'production' })
   .webpackConfig(webpackConfig)
   .postCss('resources/css/app.css', 'public/css', [

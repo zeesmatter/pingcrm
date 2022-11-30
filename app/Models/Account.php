@@ -20,4 +20,10 @@ class Account extends Model
     {
         return $this->hasMany(Contact::class);
     }
+
+    public function products()
+    {
+        return $this->hasMany(Products::class, 'created_by');
+    }
+
 }

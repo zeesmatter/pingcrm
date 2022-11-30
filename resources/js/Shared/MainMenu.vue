@@ -18,6 +18,35 @@
         <div :class="isUrl('contacts') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Contacts</div>
       </Link>
     </div>
+
+    <div class="mb-4">
+      <Link class="group flex items-center py-3" href="/customers">
+        <icon name="users" class="mr-2 w-4 h-4" :class="isUrl('customers') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />
+        <div :class="isUrl('customers') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Customers</div>
+      </Link>
+    </div>
+
+    <div class="mb-4">
+      <Link class="group flex items-center py-3" href="/memberships">
+        <icon name="users" class="mr-2 w-4 h-4" :class="isUrl('memberships') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />
+        <div :class="isUrl('memberships') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Membership</div>
+      </Link>
+    </div>
+
+    <div class="mb-4">
+      <Link class="group flex items-center py-3" href="/types">
+        <icon name="users" class="mr-2 w-4 h-4" :class="isUrl('types') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />
+        <div :class="isUrl('types') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Types</div>
+      </Link>
+    </div>
+
+    <div class="mb-4">
+      <Link class="group flex items-center py-3" href="/products">
+        <icon name="users" class="mr-2 w-4 h-4" :class="isUrl('products') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />
+        <div :class="isUrl('products') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Products</div>
+      </Link>
+    </div>
+
     <div class="mb-4">
       <Link class="group flex items-center py-3" href="/reports">
         <icon name="printer" class="mr-2 w-4 h-4" :class="isUrl('reports') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />

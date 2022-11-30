@@ -60,6 +60,7 @@ import Logo from '@/Shared/Logo'
 import Dropdown from '@/Shared/Dropdown'
 import MainMenu from '@/Shared/MainMenu'
 import FlashMessages from '@/Shared/FlashMessages'
+import inlineFlash from '@/Shared/inlineFlash'
 
 export default {
   components: {
@@ -69,6 +70,7 @@ export default {
     Link,
     Logo,
     MainMenu,
+    inlineFlash
   },
   props: {
     auth: Object,
